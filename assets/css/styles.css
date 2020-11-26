@@ -1,0 +1,125 @@
+body {
+    background-color: #202020;
+}
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.users {
+    padding: 20px 0;
+}
+.users__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.user {
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+}
+.userInfo {
+    color: white;
+    font-size: 16px;
+}
+.userName {
+    color: #EB5309;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.userType {
+    margin-top: 5px;
+    font-weight: medium;
+}
+.userImage {
+    margin-top: 10px;
+}
+.userImage img {
+    width: 100%;
+    border-radius: 5px;
+}
+.userActions {
+    margin-top: 5px;
+}
+.userDelete {
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+.userDelete:hover {
+    background-color: rgba(255, 0, 0, 0.719);
+}
+.addUser button {
+    outline: none;
+    border: none;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 10px 40px;
+    color: white;
+    font-size: 100px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+.addUser button:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+/*
+*** loader
+*/
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 48%;
+}
+.newUserLoader {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.loaderForTodo {
+    top: 40%;
+    left: 45%; 
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid limegreen;
+    border-color: limegreen transparent limegreen transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
